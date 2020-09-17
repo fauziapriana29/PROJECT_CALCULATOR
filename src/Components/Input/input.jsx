@@ -1,23 +1,17 @@
 import React from "react";
+import "./input.css";
 
 const Input = () => {
   return (
-    <div className="container mt-3">
-      <div className="input-group input-group-lg">
-        <div className="input-group-prepend">
-          <span className="input-group-text" id="inputGroup-sizing-lg">
-            Input
-          </span>
-        </div>
-        <input
-          type="text"
-          className="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-lg"
-        />
-      </div>
+    <div className="container mt-3 inputCont">
+      <input
+        type="text"
+        className="input"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-lg"
+      />
     </div>
   );
 };
 
-export default Input
+export default Input;

@@ -1,0 +1,13 @@
+/* * {
+    border: 1px solid white;
+} */
+.inputCont {
+    text-align: center;
+    margin-bottom: -15px;
+}
+.input {
+    text-align: right;
+    width: 365px;
+    height: 70px;
+    
+}
