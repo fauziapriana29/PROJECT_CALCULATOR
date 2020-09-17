@@ -3,10 +3,10 @@ import './Button.css'
 
 const Button = (props) => {
     
-    const {type, title} = props
+    const {type, title, click, value} = props
 
     return (
-        <button className={type}>{title}</button>
+        <button className={type} value={value} onClick={click}>{title}</button>
     )
 }
 

@@ -1,4 +1,11 @@
 .keypads {
     text-align: center;
     margin-left: 105px;
+    margin-top: 10px;
+}
+.numberic {
+    margin-top: 10px;
+}
+.upper-button, .middle1-button, .middle2-button {
+    margin-bottom: 10px;
 }

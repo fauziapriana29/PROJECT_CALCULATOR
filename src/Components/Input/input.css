@@ -1,6 +1,10 @@
 /* * {
     border: 1px solid white;
 } */
+@font-face {
+    font-family: "calculatorFont";
+    src: url(../calculatorFont/digital-7.ttf);
+}
 .inputCont {
     text-align: center;
     margin-bottom: -15px;
@@ -8,10 +12,13 @@
 .input {
     text-align: right;
     width: 365px;
-    height: 70px;
+    height: 80px;
     border-radius: 5px;
-    border: none;
-    font-size: 40px;
+    border: 3px solid chocolate;
+    font-size: 60px;
+font-family: "calculatorFont";
+background-color: grey;
+color: white;
 }
 .input:focus {
     outline: none;
