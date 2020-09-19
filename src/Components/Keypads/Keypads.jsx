@@ -45,15 +45,14 @@ const Keypads = () => {
     console.log(typeof display.lastNumber)
     let lastIndex = display.lastNumber.substr(display.lastNumber.length - 1, display.lastNumber.length)
     let lastOperation = display.data.substr(display.data.length - 1, display.data.length)
-    // console.log(lastIndex)
-    if (display.lastNumber !== '' && lastIndex !== "+" && lastIndex !== '-' && lastIndex !== '*' && lastIndex !== '/' ) {
+    if (display.lastNumber !== '' && display.data !== '' && lastIndex !== "+" && lastIndex !== '-' && lastIndex !== '*' && lastIndex !== '/' ) {
       setDisplay({
         ...display, data: display.data += num,
         lastNumber: '', 
         equalsNumber: false
       })
       console.log(display.lastNumber)
-    } else if (lastOperation !== num) {
+    } else if (lastOperation !== num && display.data !== '') {
       let newoperation = display.data.replace(lastOperation, num)
       setDisplay({...display,data: newoperation})
     }
@@ -78,7 +77,6 @@ const Keypads = () => {
       let equals = display.data = eval(display.data)
       let strNum = String(equals)
       setDisplay({...display, data: strNum, lastNumber: strNum, equalsNumber: true })
-      console.log(typeof display.data)
     } else {
       alert('Wrong input')
     }
