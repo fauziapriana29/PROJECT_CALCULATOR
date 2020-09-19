@@ -7,20 +7,46 @@
 }
 .inputCont {
     text-align: center;
-    margin-bottom: -15px;
+    margin-bottom: -27px;
 }
 .input {
     text-align: right;
-    width: 365px;
-    height: 80px;
+    width: 390px;
+    height: 115px;
     margin: auto;
     border-radius: 5px;
-    border: 3px solid chocolate;
+    border: 5px solid chocolate;
     font-size: 60px;
 font-family: "calculatorFont";
 background-color: grey;
 color: white;
+overflow-x: hidden;
 }
-.input:focus {
-    outline: none;
+.step2 {
+    text-align: right;
+    width: 390px;
+    height: 115px;
+    margin: auto;
+    border-radius: 5px;
+    border: 5px solid chocolate;
+    font-size: 45px;
+font-family: "calculatorFont";
+background-color: grey;
+color: white;
+overflow-x: auto;
+line-height: 100px;
+}
+.step3 {
+    text-align: right;
+    width: 390px;
+    height: 115px;
+    margin: auto;
+    border-radius: 5px;
+    border: 5px solid chocolate;
+    font-size: 35px;
+font-family: "calculatorFont";
+background-color: grey;
+color: white;
+overflow-x: hidden;
+line-height: 100px;
 }
