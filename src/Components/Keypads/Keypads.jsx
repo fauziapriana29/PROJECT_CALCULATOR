@@ -6,21 +6,21 @@ import Input from '../Input/input.jsx'
 const Keypads = () => {
 
   const [display, setDisplay] = useState({
-    data: '0',
+    data: '',
     lastNumber: '',
     equalsNumber: false
   })
   const insert = (num) => {
   
     if (num > 0 && num <= 9) {
-      if (display.equalsNumber === false && display.data != 0) {
+      if (display.equalsNumber === false) {
         console.log(display.equalsNumber)
         setDisplay({
           ...display,
           data: display.data += num,
           lastNumber: display.lastNumber += num
         })
-      } else if (display.data == 0 || display.equalsNumber === true) {
+      } else if (display.equalsNumber === true) {
         console.log(display.equalsNumber)
         // let clearNum = display.data = ''
         setDisplay({
@@ -61,7 +61,7 @@ const Keypads = () => {
         setDisplay({data: strEquals, lastNumber: display.data, equalsNumber: true })
       }
     } else if (num == 'clear') {
-      setDisplay({data: '0', lastNumber: '', equalsNumber: false})
+      setDisplay({data: '', lastNumber: '', equalsNumber: false})
     } else if (num == 'erase') {
       setDisplay({
         data: display.data.substr(0, display.data.length - 1),
